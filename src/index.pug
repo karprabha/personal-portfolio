@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href=require('./styles/style.scss') rel='stylesheet')
+        title Personal Portfolio
+
+    body
+        header
+            h1 Protfolio
+            nav
+                ul
+                    li About
+                    li Work
+                    li Contact
+            
+        main
+            section#about-me
+            section#my-work
+            section#contact-me
+
+        footer © Prabhakar Yadav
+        script(src=require('./index.ts'))
