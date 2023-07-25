@@ -5,7 +5,7 @@
 
 $minimum-screen-width: 280px;
 $parent-container-width: 100%;
-$maximum-content-width: 700px;
+$maximum-content-width: 900px;
 
 header {
     display: flex;
@@ -36,12 +36,19 @@ header {
 
 main {
     $profile-image-width: 200px;
+    $gap: 20px;
+
+    max-width: $maximum-content-width;
+    margin: auto;
+    padding: 20px;
+
     #about-me {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: $gap;
+
         .profile-pic-container {
             img {
                 width: $profile-image-width;
@@ -49,11 +56,23 @@ main {
                 object-fit: cover;
             }
         }
+
         .intro-container {
-            width: calc($parent-container-width - $profile-image-width);
+            width: calc($parent-container-width - $profile-image-width - $gap);
             min-width: $minimum-screen-width;
-            max-width: $maximum-content-width;
+
             background-color: aqua;
+        }
+    }
+
+    #my-work {
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: $gap;
+            .card {
+                background-color: teal;
+            }
         }
     }
 }
@@ -63,4 +82,5 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: aquamarine;
+    bottom: 100%;
 }
