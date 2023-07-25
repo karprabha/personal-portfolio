@@ -6,6 +6,15 @@
 $minimum-screen-width: 280px;
 $parent-container-width: 100%;
 $maximum-content-width: 900px;
+$gap: 20px;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gap;
+    flex-wrap: wrap;
+}
 
 header {
     display: flex;
@@ -36,7 +45,6 @@ header {
 
 main {
     $profile-image-width: 200px;
-    $gap: 20px;
 
     max-width: $maximum-content-width;
     margin: auto;
@@ -75,6 +83,24 @@ main {
             }
         }
     }
+
+    #contact-me {
+        form {
+            width: calc($parent-container-width / 2 - $gap / 2);
+            min-width: $minimum-screen-width;
+            display: flex;
+            flex-direction: column;
+            label {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .contact-details {
+            width: calc($parent-container-width/2 - $gap / 2);
+            min-width: $minimum-screen-width;
+        }
+    }
 }
 
 footer {
@@ -82,5 +108,4 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: aquamarine;
-    bottom: 100%;
 }

@@ -27,7 +27,7 @@ html(lang="en")
 
 
             section#my-work
-                h3 My Works
+                h2 My Works
                 .card-container
                     .card
                         h4 This is card 1
@@ -47,7 +47,33 @@ html(lang="en")
                         h4 This is card 8
                     .card
                         h4 This is card 9
+
             section#contact-me
+                h2 Contacts
+                .container 
+                    .contact-details 
+                        h3 Get in Touch
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero accusamus rerum, facere impedit cupiditate veritatis aperiam veniam perspiciatis reiciendis omnis necessitatibus minima provident a voluptas reprehenderit aliquam quibusdam, culpa atque labore similique. Amet.
+
+                        h3 My Address 
+                        .detail-info-container 
+                            i icon 
+                            span Greater Noida, India 
+                        .detail-info-container 
+                            i icon 
+                            span 9XXXXXXXXX
+                        .detail-info-container 
+                            i icon 
+                            span example@gmail.com
+                    form(method="POST")
+                        label Name
+                            input(type="text" name="name" placeholder="Your Name") 
+                        label Email 
+                            input(type="email" name="email" placeholder="Your Email")
+                        label Message 
+                            textarea(name="message" cols="30" rows="10" placeholder="Your Message") 
+                        button(type="submit") Send Message
+
 
         footer © Prabhakar Yadav
         script(src=require('./index.ts'))
