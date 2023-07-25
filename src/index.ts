@@ -6,16 +6,15 @@ const navContainer: HTMLDivElement = document.querySelector(
 const navLinks: NodeListOf<HTMLElement> =
     navContainer.querySelectorAll<HTMLLIElement>("ul > li");
 
+const isVisible = (node: HTMLElement) => {
+    return node.classList.contains("hidden");
+};
+
 const toggleMenu = () => {
     navContainer.classList.toggle("show-menu");
 };
 
 menuButton.addEventListener("click", toggleMenu);
-console.log(navLinks);
-
-const isVisible = (node: HTMLElement) => {
-    return node.classList.contains("hidden");
-};
 
 for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener("click", () => {
