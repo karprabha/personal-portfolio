@@ -19,23 +19,26 @@ $gap: 20px;
 header {
     display: flex;
     width: $parent-container-width;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    h1 {
-        margin: 0 10px;
-    }
-    nav {
-        margin: 0 10px;
-        ul {
-            display: flex;
-            list-style: none;
-            gap: 10px;
+    .container {
+        max-width: $maximum-content-width;
+        width: $parent-container-width;
 
-            a {
-                text-decoration: none;
-                color: black;
-                &:hover {
-                    color: white;
+        padding: 0 20px;
+
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }
@@ -88,6 +91,7 @@ main {
         form {
             width: calc($parent-container-width / 2 - $gap / 2);
             min-width: $minimum-screen-width;
+            margin: auto;
             display: flex;
             flex-direction: column;
             label {
@@ -97,6 +101,7 @@ main {
         }
 
         .contact-details {
+            margin: auto;
             width: calc($parent-container-width/2 - $gap / 2);
             min-width: $minimum-screen-width;
         }
