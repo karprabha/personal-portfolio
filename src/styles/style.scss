@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+$minimum-screen-width: 280px;
+$parent-container-width: 100%;
+$maximum-content-width: 700px;
+
 header {
     display: flex;
-    width: 100%;
+    width: $parent-container-width;
     justify-content: space-between;
     align-items: center;
     h1 {
@@ -21,14 +25,37 @@ header {
             a {
                 text-decoration: none;
                 color: black;
-            }
-
-            a:hover {
-                color: white;
+                &:hover {
+                    color: white;
+                }
             }
         }
     }
     background-color: aquamarine;
+}
+
+main {
+    $profile-image-width: 200px;
+    #about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        .profile-pic-container {
+            img {
+                width: $profile-image-width;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .intro-container {
+            width: calc($parent-container-width - $profile-image-width);
+            min-width: $minimum-screen-width;
+            max-width: $maximum-content-width;
+            background-color: aqua;
+        }
+    }
 }
 
 footer {
