@@ -11,17 +11,21 @@
     overflow: hidden;
 
     .slide {
-        width: calc($minimum-screen-width);
+        width: calc($minimum-screen-width/2);
         height: calc($minimum-screen-width/2);
         display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         transition: transform 500ms ease-in-out;
 
-        img {
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: $parent-container-height;
-            width: auto;
-            margin: auto;
-            object-fit: cover;
+            width: $parent-container-width;
+            margin: $gap;
         }
     }
 
