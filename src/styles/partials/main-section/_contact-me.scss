@@ -1,0 +1,21 @@
+@use "../variables" as *;
+
+#contact-me {
+    form {
+        width: calc($parent-container-width / 2 - $gap / 2);
+        min-width: $minimum-screen-width;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .contact-details {
+        margin: auto;
+        width: calc($parent-container-width/2 - $gap / 2);
+        min-width: $minimum-screen-width;
+    }
+}

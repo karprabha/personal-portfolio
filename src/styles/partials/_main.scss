@@ -1,0 +1,12 @@
+@use "./variables" as *;
+@use "./main-section";
+
+main {
+    max-width: $maximum-content-width;
+    margin: auto;
+    padding: 20px;
+
+    @extend #about-me;
+    @extend #my-work;
+    @extend #contact-me;
+}

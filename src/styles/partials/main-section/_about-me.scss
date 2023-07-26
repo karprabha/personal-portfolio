@@ -1,0 +1,28 @@
+@use "../variables" as *;
+@use "../image-slider";
+
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    .profile-pic-container {
+        img {
+            width: $profile-image-width;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .intro-container {
+        width: calc($parent-container-width - $profile-image-width - $gap);
+        min-width: $minimum-screen-width;
+        background-color: aqua;
+
+        .technical-skills {
+            @extend .slider;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use "./variables" as *;
+
+@media (max-width: 540px) {
+    .menu-btn {
+        display: inline-block;
+    }
+
+    header {
+        .container {
+            flex-direction: column;
+            gap: 0;
+
+            .mobile-menu-header {
+                width: $parent-container-width;
+            }
+
+            nav {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 300ms ease-in-out;
+
+                ul {
+                    overflow: hidden;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li:last-child {
+                        margin-bottom: calc($gap/2);
+                    }
+                }
+            }
+
+            nav.show-menu {
+                grid-template-rows: 1fr;
+            }
+        }
+    }
+}

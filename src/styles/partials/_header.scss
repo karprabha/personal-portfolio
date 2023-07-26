@@ -1,0 +1,41 @@
+@use "./variables" as *;
+
+header {
+    position: sticky;
+    top: 0%;
+    display: flex;
+    width: $parent-container-width;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    .container {
+        max-width: $maximum-content-width;
+        width: $parent-container-width;
+        padding: 0 20px;
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    background-color: aquamarine;
+}

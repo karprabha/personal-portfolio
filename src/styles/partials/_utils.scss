@@ -1,0 +1,17 @@
+@use "./variables" as *;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gap;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
+
+.scroll-target {
+    scroll-margin-top: 42px;
+}
