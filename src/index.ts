@@ -7,7 +7,7 @@ const navLinks: NodeListOf<HTMLElement> =
     navContainer.querySelectorAll<HTMLLIElement>("ul > li");
 
 const isVisible = (node: HTMLElement) => {
-    return node.classList.contains("hidden");
+    return node.checkVisibility();
 };
 
 const toggleMenu = () => {
