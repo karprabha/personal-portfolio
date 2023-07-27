@@ -19,9 +19,9 @@
     .intro-container {
         width: calc($parent-container-width - $profile-image-width - $gap);
         min-width: $minimum-screen-width;
-        // background-color: aqua;
 
         .technical-skills {
+            margin-top: $gap;
             @extend .slider;
         }
     }

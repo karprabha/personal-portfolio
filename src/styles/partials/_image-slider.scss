@@ -15,13 +15,14 @@
         height: calc($minimum-screen-width/2);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         position: absolute;
         transition: transform 500ms ease-in-out;
 
         .logo {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
             height: $parent-container-height;
             width: $parent-container-width;
@@ -49,7 +50,7 @@
 
     .bottom-nav-dots-container {
         position: absolute;
-        bottom: 5%;
+        bottom: 0%;
         left: 50%;
         width: 100px;
         gap: 10px;
