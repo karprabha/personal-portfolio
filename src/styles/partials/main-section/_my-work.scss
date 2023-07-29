@@ -20,10 +20,48 @@
                 display: flex;
                 justify-content: space-between;
                 gap: $gap;
+                margin-top: calc(0.2 * $gap);
+                margin-bottom: calc(0.5 * $gap);
 
                 .links-container {
                     display: flex;
-                    gap: $gap;
+                    gap: calc($gap/2);
+                    .icon {
+                        width: $gap;
+                    }
+                }
+            }
+
+            .project-dependencies {
+                display: flex;
+                flex-wrap: wrap;
+                gap: calc($gap/4);
+                margin-top: calc(1.5 * $gap);
+
+                .tag {
+                    display: inline-block;
+                    padding: 5px 12px;
+                    background-color: #3498db;
+                    color: #fff;
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 40px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                    transition:
+                        background-color 0.2s ease-in-out,
+                        transform 0.2s ease-in-out;
+                }
+
+                .tag:hover {
+                    background-color: #2980b9;
+                    transform: scale(1.05);
+                }
+
+                .tag:active {
+                    background-color: #1f618d;
+                    transform: scale(0.95);
                 }
             }
         }
