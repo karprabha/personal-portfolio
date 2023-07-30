@@ -5,10 +5,10 @@ footer {
     justify-content: center;
     align-items: center;
     padding: calc($gap) 0;
-    background-color: $light-bg-color;
-    color: $text-grey-6;
+    background-color: var(--bg-primary);
+    color: var(--text-color-6);
     font-size: 0.9rem;
 
-    border-top: 1px solid rgba($text-grey-1, 0.2);
+    border-top: 1px solid rgba(var(--text-color-1), 0.2);
     box-shadow: 0 2px 4px rgba(186, 186, 186, 0.1);
 }

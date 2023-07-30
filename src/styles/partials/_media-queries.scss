@@ -36,3 +36,41 @@
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --button-primary: #{$dark-button-primary};
+        --button-primary-hover: #{$dark-button-primary-hover};
+        --button-secondary: #{$dark-button-secondary};
+        --text-gold-1: #{$dark-text-gold-1};
+
+        --bg-primary: #{$dark-bg-color};
+        --bg-secondary: #{$dark-bg-grey-color};
+        --text-color-0: #{$dark-text-color-0};
+        --text-color-1: #{$dark-text-color-1};
+        --text-color-2: #{$dark-text-color-2};
+        --text-color-3: #{$dark-text-color-3};
+        --text-color-4: #{$dark-text-color-4};
+        --text-color-5: #{$dark-text-color-5};
+        --text-color-6: #{$dark-text-color-6};
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --button-primary: #{$light-button-primary};
+        --button-primary-hover: #{$light-button-primary-hover};
+        --button-secondary: #{$light-button-secondary};
+        --text-gold-1: #{$light-text-gold-1};
+
+        --bg-primary: #{$light-bg-color};
+        --bg-secondary: #{$light-bg-grey-color};
+        --text-color-0: #{$light-text-color-0};
+        --text-color-1: #{$light-text-color-1};
+        --text-color-2: #{$light-text-color-2};
+        --text-color-3: #{$light-text-color-3};
+        --text-color-4: #{$light-text-color-4};
+        --text-color-5: #{$light-text-color-5};
+        --text-color-6: #{$light-text-color-6};
+    }
+}

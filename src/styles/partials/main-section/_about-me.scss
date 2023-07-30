@@ -28,11 +28,11 @@
                 font-size: 1.4rem;
                 line-height: 1.6;
                 margin-bottom: $gap;
-                color: $text-grey-4;
+                color: var(--text-color-4);
             }
 
             .my-name {
-                color: $text-gold-1;
+                color: var(--text-gold-1);
                 font-weight: bold;
             }
 
@@ -40,7 +40,7 @@
                 font-size: 1.7rem;
                 font-weight: 500;
                 margin-bottom: $gap;
-                color: $text-grey-5;
+                color: var(--text-color-5);
             }
 
             .technical-skills {

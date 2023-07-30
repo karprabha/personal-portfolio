@@ -23,14 +23,14 @@
                 margin-bottom: calc($gap/4);
                 font-size: 1.3rem;
                 font-weight: bold;
-                color: $text-grey-4;
+                color: var(--text-color-4);
                 textarea {
                     resize: none;
                 }
                 input,
                 textarea {
                     padding: 5px;
-                    border: 1px solid rgba($text-grey-1, 0.4);
+                    border: 1px solid rgba(var(--text-color-1), 0.4);
                     border-radius: 4px;
                     font-family: $font-family;
                     font-size: 1.1rem;
@@ -45,8 +45,8 @@
                 font-size: 1.1rem;
                 margin-top: calc($gap/2);
                 padding: calc($gap/2) $gap;
-                background-color: $button-primary;
-                color: $light-bg-color;
+                background-color: var(--button-primary);
+                color: var(--bg-primary);
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
@@ -55,7 +55,7 @@
             }
 
             button:hover {
-                background-color: $button-primary-hover;
+                background-color: var(--button-primary-hover);
             }
         }
 
@@ -67,13 +67,13 @@
                 font-size: 1.5rem;
                 font-weight: bold;
                 margin-bottom: calc($gap / 2);
-                color: $text-grey-4;
+                color: var(--text-color-4);
             }
 
             p {
                 font-size: 1.1rem;
                 line-height: 1.6;
-                color: $text-grey-3;
+                color: var(--text-color-3);
             }
 
             .address-section {
@@ -85,7 +85,7 @@
 
                     .icon {
                         width: $gap;
-                        fill: $text-grey-3;
+                        fill: var(--text-color-3);
                         span {
                             font-size: 1.1rem;
                         }

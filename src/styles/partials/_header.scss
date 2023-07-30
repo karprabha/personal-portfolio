@@ -10,8 +10,8 @@ header {
     align-items: center;
     z-index: 2;
 
-    background-color: $light-bg-color;
-    border-bottom: 1px solid rgba($text-grey-1, 0.2);
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid rgba(var(--text-color-1), 0.2);
     box-shadow: 0 2px 4px rgba(186, 186, 186, 0.1);
 
     .container {
@@ -32,7 +32,7 @@ header {
             font-size: 2rem;
             font-weight: 600;
             margin: 0;
-            color: $text-grey-3;
+            color: var(--text-color-3);
         }
 
         .menu-btn {
@@ -40,17 +40,19 @@ header {
             border: none;
             background-color: transparent;
             cursor: pointer;
-            color: $text-grey-2;
+            color: var(--text-color-2);
             transition: color 0.3s;
 
             &:hover {
-                color: $text-grey-5;
+                color: var(--text-color-5);
             }
         }
 
         nav {
             ul {
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 list-style: none;
                 gap: $gap;
                 padding: calc($gap/3);
@@ -58,12 +60,26 @@ header {
                 a {
                     text-decoration: none;
                     padding: calc($gap/3);
-                    color: $text-grey-2;
+                    color: var(--text-color-2);
                     font-size: 1rem;
                     transition: color 0.3s;
                     &:hover {
-                        color: $text-grey-5;
-                        border-bottom: 2px solid rgba($text-grey-1, 0.6);
+                        color: var(--text-color-5);
+                        border-bottom: 2px solid rgba(var(--text-color-1), 0.6);
+                    }
+                }
+
+                button {
+                    background: none;
+                    color: inherit;
+                    border: none;
+                    cursor: pointer;
+                    padding: 0;
+                    .icon {
+                        width: $gap;
+                        padding-top: 6px;
+                        height: fit-content;
+                        fill: var(--button-secondary);
                     }
                 }
             }
