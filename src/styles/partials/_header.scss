@@ -5,7 +5,7 @@ header {
     top: 0%;
     display: flex;
     width: $parent-container-width;
-    padding: calc($gap/2);
+    padding: calc($gap/2) 0;
     justify-content: center;
     align-items: center;
     z-index: 2;

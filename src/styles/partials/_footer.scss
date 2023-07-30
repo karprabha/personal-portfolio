@@ -4,9 +4,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(2 * $gap);
-    background-color: $light-accent-color;
-    color: $light-bg-color;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: calc($gap) 0;
+    background-color: $light-bg-color;
+    color: $text-grey-6;
+    font-size: 0.9rem;
 }
