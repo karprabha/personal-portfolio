@@ -45,7 +45,7 @@
                     margin-bottom: calc(0.5 * $gap);
 
                     h3 {
-                        font-size: 1.3rem;
+                        font-size: 1.5rem;
                         margin: 0;
                         font-weight: 700;
                         color: $text-grey-3;
@@ -56,7 +56,7 @@
                         align-items: center;
                         gap: calc($gap/2);
                         .icon {
-                            width: $gap;
+                            width: calc(1.4 * $gap);
                             fill: $text-grey-2;
 
                             &:hover {
@@ -67,7 +67,7 @@
                 }
 
                 .project-description {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     line-height: 1.6;
                     margin-bottom: calc(1.5 * $gap);
                 }
@@ -86,7 +86,7 @@
                         text-decoration: none;
                         border: 0.1px solid $text-grey-1;
                         border-radius: 40px;
-                        font-size: 12px;
+                        font-size: 0.9rem;
                         font-weight: bold;
                         transition: background-color 0.2s ease-in-out;
 

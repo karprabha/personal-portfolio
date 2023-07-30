@@ -26,12 +26,13 @@
 
 .contact-links {
     display: flex;
+    height: calc(2 * $gap);
     justify-content: center;
     align-items: center;
     gap: calc($gap);
 
     .icon {
-        width: $gap;
+        width: calc(1.5 * $gap);
         fill: $text-grey-2;
 
         &:hover {

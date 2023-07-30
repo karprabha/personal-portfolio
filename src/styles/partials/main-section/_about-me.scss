@@ -25,7 +25,7 @@
             padding: $gap;
 
             p {
-                font-size: 1.1rem;
+                font-size: 1.4rem;
                 line-height: 1.6;
                 margin-bottom: $gap;
                 color: $text-grey-4;
@@ -37,7 +37,7 @@
             }
 
             .skill-heading {
-                font-size: 1.3rem;
+                font-size: 1.7rem;
                 font-weight: 500;
                 margin-bottom: $gap;
                 color: $text-grey-5;
@@ -49,6 +49,7 @@
             }
 
             .contact-links {
+                margin-top: $gap;
                 justify-content: flex-end;
             }
         }
