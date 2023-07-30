@@ -47,8 +47,8 @@
                     h3 {
                         font-size: 1.3rem;
                         margin: 0;
-                        font-weight: bold;
-                        color: $light-accent-color;
+                        font-weight: 700;
+                        color: $text-grey-3;
                     }
 
                     .links-container {
@@ -57,11 +57,10 @@
                         gap: calc($gap/2);
                         .icon {
                             width: $gap;
-                            fill: $light-accent-color;
-                            transition: fill 0.3s;
+                            fill: $text-grey-2;
 
                             &:hover {
-                                fill: darken($light-accent-color, 20%);
+                                fill: $text-grey-4;
                             }
                         }
                     }
@@ -82,21 +81,17 @@
                     .tag {
                         display: inline-block;
                         padding: 5px 12px;
-                        background-color: $light-accent-color;
-                        color: #fff;
+                        background-color: $light-bg-color;
+                        color: $text-grey-3;
                         text-decoration: none;
-                        border: none;
+                        border: 0.1px solid $text-grey-1;
                         border-radius: 40px;
                         font-size: 12px;
                         font-weight: bold;
                         transition: background-color 0.2s ease-in-out;
 
                         &:hover {
-                            background-color: darken($light-accent-color, 20%);
-                        }
-
-                        &:active {
-                            background-color: darken($light-accent-color, 40%);
+                            background-color: $light-bg-grey-color;
                         }
                     }
                 }
