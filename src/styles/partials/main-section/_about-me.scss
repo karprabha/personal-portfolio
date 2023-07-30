@@ -27,12 +27,19 @@
             font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: $gap;
+            color: $text-grey-4;
+        }
+
+        .my-name {
+            color: $text-gold-1;
+            font-weight: bold;
         }
 
         .skill-heading {
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 1.3rem;
+            font-weight: 500;
             margin-bottom: $gap;
+            color: $text-grey-5;
         }
 
         .technical-skills {

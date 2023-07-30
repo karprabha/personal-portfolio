@@ -85,20 +85,4 @@
             }
         }
     }
-    .contact-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: calc($gap);
-
-        .icon {
-            width: $gap;
-            fill: $light-accent-color;
-            transition: fill 0.3s;
-
-            &:hover {
-                fill: darken($light-accent-color, 20%);
-            }
-        }
-    }
 }
