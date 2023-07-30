@@ -1,21 +1,51 @@
 @use "../variables" as *;
 
 #contact-me {
-    form {
-        width: calc($parent-container-width / 2 - $gap / 2);
-        min-width: $minimum-screen-width;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        label {
+    .container {
+        display: grid;
+        margin-top: calc(0.8 * $gap);
+        margin-bottom: calc((1.4 * $gap));
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax($minimum-screen-width, 1fr)
+        );
+        .contact-details {
+            height: $parent-container-height;
+            width: $parent-container-width;
+            .address-section {
+                margin-top: $gap;
+                .detail-info-container {
+                    display: flex;
+                    gap: calc($gap/2);
+
+                    .icon {
+                        width: $gap;
+                    }
+                }
+            }
+        }
+        form {
+            height: $parent-container-height;
+            width: $parent-container-width;
             display: flex;
             flex-direction: column;
+            label {
+                display: flex;
+                flex-direction: column;
+                textarea {
+                    resize: none;
+                }
+            }
         }
     }
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc($gap);
 
-    .contact-details {
-        margin: auto;
-        width: calc($parent-container-width/2 - $gap / 2);
-        min-width: $minimum-screen-width;
+        .icon {
+            width: $gap;
+        }
     }
 }

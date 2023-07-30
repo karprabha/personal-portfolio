@@ -186,26 +186,41 @@ html(lang="en")
                 .container 
                     .contact-details 
                         h3 Get in Touch
-                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero accusamus rerum, facere impedit cupiditate veritatis aperiam veniam perspiciatis reiciendis omnis necessitatibus minima provident a voluptas reprehenderit aliquam quibusdam, culpa atque labore similique. Amet.
+                        p I'm thrilled to connect and collaborate with fellow enthusiasts, clients, and like-minded individuals. If you have any questions about my work, want to discuss potential projects, or simply want to say hello, don't hesitate to reach out! I'm always eager to engage in exciting opportunities and explore new horizons in web development.
 
-                        h3 My Address 
-                        .detail-info-container 
-                            i icon 
-                            span Greater Noida, India 
-                        .detail-info-container 
-                            i icon 
-                            span 9XXXXXXXXX
-                        .detail-info-container 
-                            i icon 
-                            span example@gmail.com
+                        .address-section
+                            h3 My Address 
+                            .detail-info-container 
+                                .icon
+                                    include assets/svg/map-marker-icon.svg
+                                span Greater Noida, India 
+                            .detail-info-container 
+                                .icon
+                                    include assets/svg/phone-icon.svg
+                                span 62XXXXXXXX
+                            .detail-info-container 
+                                .icon
+                                    include assets/svg/email-icon.svg
+                                span example@gmail.com
+
                     form(method="POST")
                         label Name
                             input(type="text" name="name" placeholder="Your Name") 
                         label Email 
                             input(type="email" name="email" placeholder="Your Email")
-                        label Message 
-                            textarea(name="message" cols="30" rows="10" placeholder="Your Message") 
+                        label Message
+                            textarea(name="message" cols="30" rows="10" placeholder="Your Message")
                         button(type="submit") Send Message
+                .contact-links
+                    a(href="https://github.com/karprabha" target="_blank") 
+                        .icon
+                            include assets/svg/github-logo.svg
+                    a(href="https://www.linkedin.com/in/karprabha/" target="_blank") 
+                        .icon
+                            include assets/svg/linkedin-logo-2.svg
+                    a(href="https://twitter.com/karprabha_" target="_blank") 
+                        .icon
+                            include assets/svg/twitter-logo.svg
 
 
         footer © Prabhakar Yadav
