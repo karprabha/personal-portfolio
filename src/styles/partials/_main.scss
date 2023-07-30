@@ -3,6 +3,10 @@
 
 main {
     max-width: $parent-container-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     @extend #about-me;
     @extend #my-work;

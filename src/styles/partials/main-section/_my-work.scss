@@ -10,11 +10,11 @@
             gap: $gap;
 
             .card {
-                // border: 1px solid #ccc;
+                border: 1px solid rgba(204, 204, 204, 0.4);
                 padding: $gap;
-                // background-color: $light-bg-color;
+                background-color: $light-bg-color;
                 border-radius: 8px;
-                // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 2px 4px rgba(186, 186, 186, 0.1);
                 transition: box-shadow 0.3s;
 
                 .project-thumbnail-container {

@@ -2,8 +2,7 @@
 
 .container {
     max-width: $maximum-content-width;
-    width: $parent-container-width;
-    margin: auto;
+    width: calc($parent-container-width - 2 * $gap);
     padding: $gap;
 }
 
@@ -12,7 +11,15 @@
 }
 
 .scroll-target {
-    scroll-margin-top: 65px;
+    scroll-margin-top: 61px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: calc(2 * $gap);
+    color: $text-grey-4;
+    font-weight: 600;
 }
 
 .contact-links {
