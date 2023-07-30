@@ -17,12 +17,19 @@
     }
 
     .intro-container {
-        width: calc($parent-container-width - $profile-image-width - $gap);
         min-width: $minimum-screen-width;
+        flex: 1;
+        .skill-heading {
+            margin-top: calc($gap/4);
+        }
 
         .technical-skills {
             margin-top: $gap;
             @extend .slider;
+        }
+
+        .contact-links {
+            justify-content: flex-end;
         }
     }
 }
