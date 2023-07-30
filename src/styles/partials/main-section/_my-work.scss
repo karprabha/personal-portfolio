@@ -1,102 +1,110 @@
 @use "../variables" as *;
 
 #my-work {
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: $gap;
+    .container {
+        display: block;
 
-        .card {
-            border: 1px solid #ccc;
-            padding: $gap;
-            background-color: $light-bg-color;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s;
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: $gap;
 
-            .project-thumbnail-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                overflow: hidden;
+            .card {
+                // border: 1px solid #ccc;
+                padding: $gap;
+                // background-color: $light-bg-color;
                 border-radius: 8px;
+                // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.3s;
 
-                img {
-                    width: $parent-container-width;
-                    height: auto;
-                    transition: transform 0.3s;
-
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
-
-            .project-title-and-links-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: $gap;
-                margin-top: $gap;
-                margin-bottom: calc(0.5 * $gap);
-
-                h3 {
-                    font-size: 1.3rem;
-                    margin: 0;
-                    font-weight: bold;
-                    color: $light-accent-color;
-                }
-
-                .links-container {
+                .project-thumbnail-container {
                     display: flex;
+                    justify-content: center;
                     align-items: center;
-                    gap: calc($gap/2);
-                    .icon {
-                        width: $gap;
-                        fill: $light-accent-color;
-                        transition: fill 0.3s;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+
+                    img {
+                        width: $parent-container-width;
+                        height: auto;
+                        transition: transform 0.3s;
 
                         &:hover {
-                            fill: darken($light-accent-color, 20%);
+                            transform: scale(1.1);
                         }
                     }
                 }
-            }
 
-            .project-description {
-                font-size: 1rem;
-                line-height: 1.6;
-                margin-bottom: calc(1.5 * $gap);
-            }
+                .project-title-and-links-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: $gap;
+                    margin-top: $gap;
+                    margin-bottom: calc(0.5 * $gap);
 
-            .project-dependencies {
-                display: flex;
-                flex-wrap: wrap;
-                gap: calc($gap/4);
-                margin-top: $gap;
-
-                .tag {
-                    display: inline-block;
-                    padding: 5px 12px;
-                    background-color: $light-accent-color;
-                    color: #fff;
-                    text-decoration: none;
-                    border: none;
-                    border-radius: 40px;
-                    font-size: 12px;
-                    font-weight: bold;
-                    transition: background-color 0.2s ease-in-out;
-
-                    &:hover {
-                        background-color: darken($light-accent-color, 20%);
+                    h3 {
+                        font-size: 1.3rem;
+                        margin: 0;
+                        font-weight: bold;
+                        color: $light-accent-color;
                     }
 
-                    &:active {
-                        background-color: darken($light-accent-color, 40%);
+                    .links-container {
+                        display: flex;
+                        align-items: center;
+                        gap: calc($gap/2);
+                        .icon {
+                            width: $gap;
+                            fill: $light-accent-color;
+                            transition: fill 0.3s;
+
+                            &:hover {
+                                fill: darken($light-accent-color, 20%);
+                            }
+                        }
+                    }
+                }
+
+                .project-description {
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: calc(1.5 * $gap);
+                }
+
+                .project-dependencies {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: calc($gap/4);
+                    margin-top: $gap;
+
+                    .tag {
+                        display: inline-block;
+                        padding: 5px 12px;
+                        background-color: $light-accent-color;
+                        color: #fff;
+                        text-decoration: none;
+                        border: none;
+                        border-radius: 40px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        transition: background-color 0.2s ease-in-out;
+
+                        &:hover {
+                            background-color: darken($light-accent-color, 20%);
+                        }
+
+                        &:active {
+                            background-color: darken($light-accent-color, 40%);
+                        }
                     }
                 }
             }
         }
     }
+}
+
+section#my-work {
+    background-color: $light-bg-grey-color;
 }

@@ -1,11 +1,10 @@
 @use "./variables" as *;
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: $gap;
-    flex-wrap: wrap;
+    max-width: $maximum-content-width;
+    width: $parent-container-width;
+    margin: auto;
+    padding: $gap;
 }
 
 .hidden {

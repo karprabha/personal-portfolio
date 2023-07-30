@@ -13,8 +13,11 @@ header {
     background-color: $light-bg-color;
 
     .container {
-        max-width: $maximum-content-width;
-        width: $parent-container-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $gap;
+        flex-wrap: wrap;
         padding: 0 $gap;
 
         .mobile-menu-header {

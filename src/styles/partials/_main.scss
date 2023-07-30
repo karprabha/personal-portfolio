@@ -2,9 +2,7 @@
 @use "./main-section";
 
 main {
-    max-width: $maximum-content-width;
-    margin: auto;
-    padding: 20px;
+    max-width: $parent-container-width;
 
     @extend #about-me;
     @extend #my-work;

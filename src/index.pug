@@ -23,63 +23,211 @@ html(lang="en")
                             a(href="#contact-me") Contact
         main
             section#about-me.scroll-target
-                .profile-pic-container
-                    img(src=require("assets/images/my-image.jpg") alt="profile picture")
-                .intro-container
-                    p 
-                        | Hello! I'm 
-                        span(class="my-name") Prabhakar Yadav
-                        | , a passionate web developer on a journey with React. Building modern and intuitive interfaces to elevate user experiences. 
+                .container
+                    .profile-pic-container
+                        img(src=require("assets/images/my-image.jpg") alt="profile picture")
+                    .intro-container
+                        p 
+                            | Hello! I'm 
+                            span(class="my-name") Prabhakar Yadav
+                            | , a passionate web developer on a journey with React. Building modern and intuitive interfaces to elevate user experiences. 
 
-                    h4(class="skill-heading") Technical Skills
-                    .technical-skills
-                        .slider
-                            .slide
-                                .logo
-                                    include assets/svg/react-logo-1.svg
-                                    .description REACT
-                            .slide
-                                .logo
-                                    include assets/svg/javascript-logo-2.svg
-                                    .description JAVASCRIPT
-                            .slide
-                                .logo
-                                    include assets/svg/webpack-logo-1.svg
-                                    .description WEBPACK
-                            .slide
-                                .logo
-                                    include assets/svg/typescript-logo-1.svg
-                                    .description TYPESCRIPT
-                            .slide
-                                .logo
-                                    include assets/svg/sass-logo.svg
-                                    .description SASS
-                            .slide
-                                .logo
-                                    include assets/svg/jest-logo.svg
-                                    .description JEST
-                            .slide
-                                .logo
-                                    include assets/svg/html5-logo-1.svg
-                                    .description HTML5
-                            .slide
-                                .logo
-                                    include assets/svg/css3-logo-1.svg
-                                    .description CSS3
-                            .slide
-                                .logo
-                                    include assets/svg/git-logo.svg
-                                    .description GIT
-                            .slide
-                                .logo
-                                    include assets/svg/github-logo-1.svg
-                                    .description GITHUB
-                            .slide
-                                .logo
-                                    include assets/svg/npm-logo.svg
-                                    .description NPM
-                            button(type="button" class="btn-nav btn-prev") &lt;
-                            button(type="button" class="btn-nav btn-next") &gt;
+                        h4(class="skill-heading") Technical Skills
+                        .technical-skills
+                            .slider
+                                .slide
+                                    .logo
+                                        include assets/svg/react-logo-1.svg
+                                        .description REACT
+                                .slide
+                                    .logo
+                                        include assets/svg/javascript-logo-2.svg
+                                        .description JAVASCRIPT
+                                .slide
+                                    .logo
+                                        include assets/svg/webpack-logo-1.svg
+                                        .description WEBPACK
+                                .slide
+                                    .logo
+                                        include assets/svg/typescript-logo-1.svg
+                                        .description TYPESCRIPT
+                                .slide
+                                    .logo
+                                        include assets/svg/sass-logo.svg
+                                        .description SASS
+                                .slide
+                                    .logo
+                                        include assets/svg/jest-logo.svg
+                                        .description JEST
+                                .slide
+                                    .logo
+                                        include assets/svg/html5-logo-1.svg
+                                        .description HTML5
+                                .slide
+                                    .logo
+                                        include assets/svg/css3-logo-1.svg
+                                        .description CSS3
+                                .slide
+                                    .logo
+                                        include assets/svg/git-logo.svg
+                                        .description GIT
+                                .slide
+                                    .logo
+                                        include assets/svg/github-logo-1.svg
+                                        .description GITHUB
+                                .slide
+                                    .logo
+                                        include assets/svg/npm-logo.svg
+                                        .description NPM
+                                button(type="button" class="btn-nav btn-prev") &lt;
+                                button(type="button" class="btn-nav btn-next") &gt;
+                        .contact-links
+                            a(href="https://github.com/karprabha" target="_blank") 
+                                .icon
+                                    include assets/svg/github-logo-2.svg
+                            a(href="https://www.linkedin.com/in/karprabha/" target="_blank") 
+                                .icon
+                                    include assets/svg/linkedin-logo-2.svg
+                            a(href="https://twitter.com/karprabha_" target="_blank") 
+                                .icon
+                                    include assets/svg/twitter-logo.svg
+
+            section#my-work.scroll-target
+                .container
+                    h2 My Works
+                    .card-container
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/sql-query-app.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 SQL Query App
+                                .links-container
+                                    a(href="https://github.com/karprabha/sql-query-app" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://transcendent-malabi-550033.netlify.app/" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |SQL Query App is a user-friendly web-based application that enables users to input SQL queries and view the query results displayed in a convenient table format
+                            .project-dependencies
+                                a(href="https://vitejs.dev" target="_blank" class="tag") Vite
+                                a(href="https://react.dev" target="_blank" class="tag") React
+                                a(href="https://reactrouter.com/en/main" target="_blank" class="tag") React-Router
+                                a(href="https://www.npmjs.com/package/react-window" target="_blank" class="tag") React-Window
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/battleship.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 Battleship Game
+                                .links-container
+                                    a(href="https://github.com/karprabha/battleship" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://fantastic-florentine-7819d4.netlify.app/" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |Welcome to the Battleship Game! This web-based application brings the classic naval strategy game to your browser, offering an engaging and thrilling gaming experience
+                            .project-dependencies
+                                a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
+                                a(href="https://jestjs.io" target="_blank" class="tag") Jest
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
+
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/mobile-menu-npm.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 Mobile Menu (Node Package)
+                                .links-container
+                                    a(href="https://github.com/karprabha/mobile-menu-npm" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://www.npmjs.com/package/@karprabha/mobile-menu" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |Mobile Menu is a progressively collapsing menu, similar to the one used by BBC. It allows you to create a responsive and user-friendly menu for your website.
+                            .project-dependencies
+                                a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
+                                a(href="https://www.npmjs.com" target="_blank" class="tag") NPM
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/image-slider-npm.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 Image Slider (Node Package)
+                                .links-container
+                                    a(href="https://github.com/karprabha/image-slider-npm" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://www.npmjs.com/package/@karprabha/image-slider" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |Image slider is a module that allows you to create an image carousel or slider on your website. It provides a user-friendly and interactive way to showcase a collection of images in a slideshow format.
+                            .project-dependencies
+                                a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
+                                a(href="https://www.npmjs.com" target="_blank" class="tag") NPM
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/sfml-classic-pong-game.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 SFML Classic Pong Game
+                                .links-container
+                                    a(href="https://github.com/karprabha/sfml-classic-pong-game" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://github.com/karprabha/sfml-classic-pong-game" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |A simple recreation of the classic Pong game using SFML (Simple and Fast Multimedia Library). Players control paddles to hit a ball back and forth, until one player misses the ball.
+                            .project-dependencies
+                                a(href="https://en.cppreference.com/w/" target="_blank" class="tag") C++
+                                a(href="https://www.sfml-dev.org/" target="_blank" class="tag") SFML
+                                a(href="https://visualstudio.microsoft.com" target="_blank" class="tag") Visual Studio
+
+            section#contact-me.scroll-target
+                .container 
+                    h2 Contacts
+                    .contacts-container
+                        form(method="POST")
+                            label Name
+                                input(type="text" name="name" placeholder="Your Name") 
+                            label Email 
+                                input(type="email" name="email" placeholder="Your Email")
+                            label Message
+                                textarea(name="message" cols="30" rows="10" placeholder="Your Message")
+                            button(type="submit") Send Message
+                        .contact-details 
+                            h3 Get in Touch
+                            p I'm thrilled to connect and collaborate with fellow enthusiasts, clients, and like-minded individuals. If you have any questions about my work, want to discuss potential projects, or simply want to say hello, don't hesitate to reach out! I'm always eager to engage in exciting opportunities and explore new horizons in web development.
+
+                            .address-section
+                                h3 My Address 
+                                .detail-info-container 
+                                    .icon
+                                        include assets/svg/map-marker-icon.svg
+                                    span Greater Noida, India 
+                                .detail-info-container 
+                                    .icon
+                                        include assets/svg/phone-icon.svg
+                                    span 62XXXXXXXX
+                                .detail-info-container 
+                                    .icon
+                                        include assets/svg/email-icon.svg
+                                    span example@gmail.com
+
                     .contact-links
                         a(href="https://github.com/karprabha" target="_blank") 
                             .icon
@@ -90,151 +238,6 @@ html(lang="en")
                         a(href="https://twitter.com/karprabha_" target="_blank") 
                             .icon
                                 include assets/svg/twitter-logo.svg
-
-            section#my-work.scroll-target
-                h2 My Works
-                .card-container
-                    .card
-                        .project-thumbnail-container
-                            img(src=require("./assets/images/my-work-thumbnail/sql-query-app.png"), alt="project-thumbnadil")
-                        .project-title-and-links-container 
-                            h3 SQL Query App
-                            .links-container
-                                a(href="https://github.com/karprabha/sql-query-app" target="_blank") 
-                                    .icon
-                                        include assets/svg/github-logo-2.svg
-                                a(href="https://transcendent-malabi-550033.netlify.app/" target="_blank") 
-                                    .icon
-                                        include assets/svg/open-link-icon.svg
-                        .project-description
-                            |SQL Query App is a user-friendly web-based application that enables users to input SQL queries and view the query results displayed in a convenient table format
-                        .project-dependencies
-                            a(href="https://vitejs.dev" target="_blank" class="tag") Vite
-                            a(href="https://react.dev" target="_blank" class="tag") React
-                            a(href="https://reactrouter.com/en/main" target="_blank" class="tag") React-Router
-                            a(href="https://www.npmjs.com/package/react-window" target="_blank" class="tag") React-Window
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                    .card
-                        .project-thumbnail-container
-                            img(src=require("./assets/images/my-work-thumbnail/battleship.png"), alt="project-thumbnadil")
-                        .project-title-and-links-container 
-                            h3 Battleship Game
-                            .links-container
-                                a(href="https://github.com/karprabha/battleship" target="_blank") 
-                                    .icon
-                                        include assets/svg/github-logo-2.svg
-                                a(href="https://fantastic-florentine-7819d4.netlify.app/" target="_blank") 
-                                    .icon
-                                        include assets/svg/open-link-icon.svg
-                        .project-description
-                            |Welcome to the Battleship Game! This web-based application brings the classic naval strategy game to your browser, offering an engaging and thrilling gaming experience
-                        .project-dependencies
-                            a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
-                            a(href="https://jestjs.io" target="_blank" class="tag") Jest
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
-
-                    .card
-                        .project-thumbnail-container
-                            img(src=require("./assets/images/my-work-thumbnail/mobile-menu-npm.png"), alt="project-thumbnadil")
-                        .project-title-and-links-container 
-                            h3 Mobile Menu (Node Package)
-                            .links-container
-                                a(href="https://github.com/karprabha/mobile-menu-npm" target="_blank") 
-                                    .icon
-                                        include assets/svg/github-logo-2.svg
-                                a(href="https://www.npmjs.com/package/@karprabha/mobile-menu" target="_blank") 
-                                    .icon
-                                        include assets/svg/open-link-icon.svg
-                        .project-description
-                            |Mobile Menu is a progressively collapsing menu, similar to the one used by BBC. It allows you to create a responsive and user-friendly menu for your website.
-                        .project-dependencies
-                            a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
-                            a(href="https://www.npmjs.com" target="_blank" class="tag") NPM
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
-                    .card
-                        .project-thumbnail-container
-                            img(src=require("./assets/images/my-work-thumbnail/image-slider-npm.png"), alt="project-thumbnadil")
-                        .project-title-and-links-container 
-                            h3 Image Slider (Node Package)
-                            .links-container
-                                a(href="https://github.com/karprabha/image-slider-npm" target="_blank") 
-                                    .icon
-                                        include assets/svg/github-logo-2.svg
-                                a(href="https://www.npmjs.com/package/@karprabha/image-slider" target="_blank") 
-                                    .icon
-                                        include assets/svg/open-link-icon.svg
-                        .project-description
-                            |Image slider is a module that allows you to create an image carousel or slider on your website. It provides a user-friendly and interactive way to showcase a collection of images in a slideshow format.
-                        .project-dependencies
-                            a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
-                            a(href="https://www.npmjs.com" target="_blank" class="tag") NPM
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                            a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
-                    .card
-                        .project-thumbnail-container
-                            img(src=require("./assets/images/my-work-thumbnail/sfml-classic-pong-game.png"), alt="project-thumbnadil")
-                        .project-title-and-links-container 
-                            h3 SFML Classic Pong Game
-                            .links-container
-                                a(href="https://github.com/karprabha/sfml-classic-pong-game" target="_blank") 
-                                    .icon
-                                        include assets/svg/github-logo-2.svg
-                                a(href="https://github.com/karprabha/sfml-classic-pong-game" target="_blank") 
-                                    .icon
-                                        include assets/svg/open-link-icon.svg
-                        .project-description
-                            |A simple recreation of the classic Pong game using SFML (Simple and Fast Multimedia Library). Players control paddles to hit a ball back and forth, until one player misses the ball.
-                        .project-dependencies
-                            a(href="https://en.cppreference.com/w/" target="_blank" class="tag") C++
-                            a(href="https://www.sfml-dev.org/" target="_blank" class="tag") SFML
-                            a(href="https://visualstudio.microsoft.com" target="_blank" class="tag") Visual Studio
-
-            section#contact-me.scroll-target
-                h2 Contacts
-                .container 
-                    form(method="POST")
-                        label Name
-                            input(type="text" name="name" placeholder="Your Name") 
-                        label Email 
-                            input(type="email" name="email" placeholder="Your Email")
-                        label Message
-                            textarea(name="message" cols="30" rows="10" placeholder="Your Message")
-                        button(type="submit") Send Message
-                    .contact-details 
-                        h3 Get in Touch
-                        p I'm thrilled to connect and collaborate with fellow enthusiasts, clients, and like-minded individuals. If you have any questions about my work, want to discuss potential projects, or simply want to say hello, don't hesitate to reach out! I'm always eager to engage in exciting opportunities and explore new horizons in web development.
-
-                        .address-section
-                            h3 My Address 
-                            .detail-info-container 
-                                .icon
-                                    include assets/svg/map-marker-icon.svg
-                                span Greater Noida, India 
-                            .detail-info-container 
-                                .icon
-                                    include assets/svg/phone-icon.svg
-                                span 62XXXXXXXX
-                            .detail-info-container 
-                                .icon
-                                    include assets/svg/email-icon.svg
-                                span example@gmail.com
-
-                .contact-links
-                    a(href="https://github.com/karprabha" target="_blank") 
-                        .icon
-                            include assets/svg/github-logo-2.svg
-                    a(href="https://www.linkedin.com/in/karprabha/" target="_blank") 
-                        .icon
-                            include assets/svg/linkedin-logo-2.svg
-                    a(href="https://twitter.com/karprabha_" target="_blank") 
-                        .icon
-                            include assets/svg/twitter-logo.svg
 
 
         footer © Prabhakar Yadav

@@ -1,8 +1,9 @@
 @use "../variables" as *;
 
 #contact-me {
-    .container {
+    .contacts-container {
         display: grid;
+        gap: $gap;
         margin-top: calc(0.8 * $gap);
         margin-bottom: calc((1.4 * $gap));
         grid-template-columns: repeat(

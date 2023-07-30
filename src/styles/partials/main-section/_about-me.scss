@@ -2,53 +2,55 @@
 @use "../image-slider";
 
 #about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: $gap;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $gap;
 
-    .profile-pic-container {
-        img {
-            width: $profile-image-width;
-            height: auto;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    }
-
-    .intro-container {
-        min-width: $minimum-screen-width;
-        flex: 1;
-        padding: $gap;
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: $gap;
-            color: $text-grey-4;
+        .profile-pic-container {
+            img {
+                width: $profile-image-width;
+                height: auto;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
         }
 
-        .my-name {
-            color: $text-gold-1;
-            font-weight: bold;
-        }
+        .intro-container {
+            min-width: $minimum-screen-width;
+            flex: 1;
+            padding: $gap;
 
-        .skill-heading {
-            font-size: 1.3rem;
-            font-weight: 500;
-            margin-bottom: $gap;
-            color: $text-grey-5;
-        }
+            p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: $gap;
+                color: $text-grey-4;
+            }
 
-        .technical-skills {
-            margin-top: $gap;
-            @extend .slider;
-        }
+            .my-name {
+                color: $text-gold-1;
+                font-weight: bold;
+            }
 
-        .contact-links {
-            justify-content: flex-end;
+            .skill-heading {
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin-bottom: $gap;
+                color: $text-grey-5;
+            }
+
+            .technical-skills {
+                margin-top: $gap;
+                @extend .slider;
+            }
+
+            .contact-links {
+                justify-content: flex-end;
+            }
         }
     }
 }
