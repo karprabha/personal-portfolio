@@ -3,45 +3,83 @@
 #my-work {
     .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: $gap;
+
         .card {
+            border: 1px solid #ccc;
+            padding: $gap;
+            background-color: $light-bg-color;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+
             .project-thumbnail-container {
-                &:hover {
-                    opacity: 0.7;
-                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+
                 img {
-                    max-width: 100%;
-                    max-height: 100%;
+                    width: $parent-container-width;
+                    height: auto;
+                    transition: transform 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
 
             .project-title-and-links-container {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 gap: $gap;
-                margin-top: calc(0.2 * $gap);
+                margin-top: $gap;
                 margin-bottom: calc(0.5 * $gap);
+
+                h3 {
+                    font-size: 1.3rem;
+                    margin: 0;
+                    font-weight: bold;
+                    color: $light-accent-color;
+                }
 
                 .links-container {
                     display: flex;
+                    align-items: center;
                     gap: calc($gap/2);
                     .icon {
                         width: $gap;
+                        fill: $light-accent-color;
+                        transition: fill 0.3s;
+
+                        &:hover {
+                            fill: darken($light-accent-color, 20%);
+                        }
                     }
                 }
+            }
+
+            .project-description {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: calc(1.5 * $gap);
             }
 
             .project-dependencies {
                 display: flex;
                 flex-wrap: wrap;
                 gap: calc($gap/4);
-                margin-top: calc(1.5 * $gap);
+                margin-top: $gap;
 
                 .tag {
                     display: inline-block;
                     padding: 5px 12px;
-                    background-color: #3498db;
+                    background-color: $light-accent-color;
                     color: #fff;
                     text-decoration: none;
                     border: none;
@@ -49,14 +87,14 @@
                     font-size: 12px;
                     font-weight: bold;
                     transition: background-color 0.2s ease-in-out;
-                }
 
-                .tag:hover {
-                    background-color: #2980b9;
-                }
+                    &:hover {
+                        background-color: darken($light-accent-color, 20%);
+                    }
 
-                .tag:active {
-                    background-color: #1f618d;
+                    &:active {
+                        background-color: darken($light-accent-color, 40%);
+                    }
                 }
             }
         }

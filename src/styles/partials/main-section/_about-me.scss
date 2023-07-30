@@ -13,14 +13,26 @@
             width: $profile-image-width;
             height: auto;
             object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     }
 
     .intro-container {
         min-width: $minimum-screen-width;
         flex: 1;
+        padding: $gap;
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: $gap;
+        }
+
         .skill-heading {
-            margin-top: calc($gap/4);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: $gap;
         }
 
         .technical-skills {

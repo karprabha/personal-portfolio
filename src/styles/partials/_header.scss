@@ -9,10 +9,13 @@ header {
     align-items: center;
     z-index: 2;
 
+    background-color: $light-bg-color;
+    color: $light-text-color;
+
     .container {
         max-width: $maximum-content-width;
         width: $parent-container-width;
-        padding: 0 20px;
+        padding: 0 $gap;
 
         .mobile-menu-header {
             display: flex;
@@ -20,22 +23,43 @@ header {
             align-items: center;
         }
 
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+            color: $light-accent-color;
+        }
+
+        .menu-btn {
+            font-size: 2rem;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: $light-text-color;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $light-accent-color;
+            }
+        }
+
         nav {
             ul {
                 display: flex;
                 list-style: none;
-                gap: 10px;
+                gap: $gap;
 
                 a {
                     text-decoration: none;
-                    color: black;
-
+                    color: $light-text-color;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: color 0.3s;
                     &:hover {
-                        color: white;
+                        color: $light-accent-color;
                     }
                 }
             }
         }
     }
-    background-color: aquamarine;
 }

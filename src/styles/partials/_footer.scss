@@ -1,6 +1,12 @@
+@use "variables" as *;
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    height: calc(2 * $gap);
+    background-color: $light-accent-color;
+    color: $light-bg-color;
+    font-size: 1rem;
+    font-weight: bold;
 }

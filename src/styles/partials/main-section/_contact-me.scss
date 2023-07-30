@@ -21,7 +21,7 @@
                 flex-direction: column;
                 margin-bottom: calc($gap/4);
                 font-weight: bold;
-                color: #333;
+                color: $light-text-color;
                 textarea {
                     resize: none;
                 }
@@ -40,8 +40,8 @@
             button {
                 margin-top: calc($gap/2);
                 padding: calc($gap/2) $gap;
-                background-color: #007acc;
-                color: #fff;
+                background-color: $light-accent-color;
+                color: $light-bg-color;
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
@@ -50,17 +50,32 @@
             }
 
             button:hover {
-                background-color: #005ea0;
+                background-color: darken($light-accent-color, 20%);
             }
         }
 
         .contact-details {
             height: $parent-container-height;
             width: $parent-container-width;
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: calc($gap / 2);
+                color: $light-text-color;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: $light-text-color;
+            }
+
             .address-section {
                 margin-top: $gap;
                 .detail-info-container {
                     display: flex;
+                    align-items: center;
                     gap: calc($gap/2);
 
                     .icon {
@@ -78,6 +93,12 @@
 
         .icon {
             width: $gap;
+            fill: $light-accent-color;
+            transition: fill 0.3s;
+
+            &:hover {
+                fill: darken($light-accent-color, 20%);
+            }
         }
     }
 }

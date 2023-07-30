@@ -1,8 +1,20 @@
+$light-bg-color: #ffffff;
+$light-text-color: #333333;
+$light-accent-color: #007acc;
+
+.dark-mode {
+    $dark-bg-color: #121212;
+    $dark-text-color: #f0f0f0;
+    $dark-accent-color: #007acc;
+}
+
 $minimum-screen-width: 280px;
 $parent-container-width: 100%;
 $parent-container-height: 100%;
 $maximum-content-width: 900px;
+
 $profile-image-width: 250px;
+
 $gap: 20px;
 $font-family:
     system-ui,
