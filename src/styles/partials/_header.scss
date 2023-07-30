@@ -5,12 +5,12 @@ header {
     top: 0%;
     display: flex;
     width: $parent-container-width;
+    padding: calc($gap/2);
     justify-content: center;
     align-items: center;
     z-index: 2;
 
     background-color: $light-bg-color;
-    color: $light-text-color;
 
     .container {
         max-width: $maximum-content-width;
@@ -25,9 +25,9 @@ header {
 
         h1 {
             font-size: 2rem;
-            font-weight: bold;
+            font-weight: medium;
             margin: 0;
-            color: $light-accent-color;
+            color: $text-grey-5;
         }
 
         .menu-btn {
@@ -35,11 +35,11 @@ header {
             border: none;
             background-color: transparent;
             cursor: pointer;
-            color: $light-text-color;
+            color: $text-grey-2;
             transition: color 0.3s;
 
             &:hover {
-                color: $light-accent-color;
+                color: $text-grey-5;
             }
         }
 
@@ -48,15 +48,17 @@ header {
                 display: flex;
                 list-style: none;
                 gap: $gap;
+                padding: calc($gap/3);
 
                 a {
                     text-decoration: none;
-                    color: $light-text-color;
-                    font-size: 18px;
-                    font-weight: bold;
+                    padding: calc($gap/3);
+                    color: $text-grey-2;
+                    font-size: 1rem;
                     transition: color 0.3s;
                     &:hover {
-                        color: $light-accent-color;
+                        color: $text-grey-5;
+                        border-bottom: 2px solid rgba($text-grey-1, 0.6);
                     }
                 }
             }

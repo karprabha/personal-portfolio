@@ -1,17 +1,28 @@
-$light-bg-color: #ffffff;
+$light-bg-color: #f9fafb;
+$light-bg-grey-color: #f3f4f6;
 $light-text-color: #333333;
-$light-accent-color: #007acc;
 
+$button-secondary: #ffffff;
+$button-primary: #0f766e;
+
+$text-grey-1: #9ca3af;
+$text-grey-2: #6b7280;
+$text-grey-3: #4b5563;
+$text-grey-4: #374151;
+$text-grey-5: #1f2937;
+$text-grey-6: #111827;
+
+$light-accent-color: #519851;
 .dark-mode {
     $dark-bg-color: #121212;
     $dark-text-color: #f0f0f0;
-    $dark-accent-color: #007acc;
+    $dark-accent-color: #0f766e;
 }
 
 $minimum-screen-width: 280px;
 $parent-container-width: 100%;
 $parent-container-height: 100%;
-$maximum-content-width: 900px;
+$maximum-content-width: 1200px;
 
 $profile-image-width: 250px;
 
