@@ -8,4 +8,7 @@ footer {
     background-color: $light-bg-color;
     color: $text-grey-6;
     font-size: 0.9rem;
+
+    border-top: 1px solid rgba($text-grey-1, 0.2);
+    box-shadow: 0 2px 4px rgba(186, 186, 186, 0.1);
 }

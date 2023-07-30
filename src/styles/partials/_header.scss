@@ -11,6 +11,8 @@ header {
     z-index: 2;
 
     background-color: $light-bg-color;
+    border-bottom: 1px solid rgba($text-grey-1, 0.2);
+    box-shadow: 0 2px 4px rgba(186, 186, 186, 0.1);
 
     .container {
         display: flex;
