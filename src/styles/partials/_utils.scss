@@ -4,6 +4,7 @@
     max-width: $maximum-content-width;
     width: calc($parent-container-width - 2 * $gap);
     padding: $gap;
+    margin: auto;
 }
 
 .hidden {
