@@ -184,6 +184,14 @@ html(lang="en")
             section#contact-me.scroll-target
                 h2 Contacts
                 .container 
+                    form(method="POST")
+                        label Name
+                            input(type="text" name="name" placeholder="Your Name") 
+                        label Email 
+                            input(type="email" name="email" placeholder="Your Email")
+                        label Message
+                            textarea(name="message" cols="30" rows="10" placeholder="Your Message")
+                        button(type="submit") Send Message
                     .contact-details 
                         h3 Get in Touch
                         p I'm thrilled to connect and collaborate with fellow enthusiasts, clients, and like-minded individuals. If you have any questions about my work, want to discuss potential projects, or simply want to say hello, don't hesitate to reach out! I'm always eager to engage in exciting opportunities and explore new horizons in web development.
@@ -203,14 +211,6 @@ html(lang="en")
                                     include assets/svg/email-icon.svg
                                 span example@gmail.com
 
-                    form(method="POST")
-                        label Name
-                            input(type="text" name="name" placeholder="Your Name") 
-                        label Email 
-                            input(type="email" name="email" placeholder="Your Email")
-                        label Message
-                            textarea(name="message" cols="30" rows="10" placeholder="Your Message")
-                        button(type="submit") Send Message
                 .contact-links
                     a(href="https://github.com/karprabha" target="_blank") 
                         .icon
