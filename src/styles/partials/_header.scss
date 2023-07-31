@@ -26,6 +26,22 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .mobile-menu-btn-container {
+                .toggle-dark-mode-mobile {
+                    background: none;
+                    color: inherit;
+                    border: none;
+                    cursor: pointer;
+                    margin-right: $gap;
+                    .icon {
+                        width: $gap;
+                        height: $gap;
+                    }
+                    :hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
         }
 
         h1 {

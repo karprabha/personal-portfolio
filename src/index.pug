@@ -12,7 +12,10 @@ html(lang="en")
             .container 
                 .mobile-menu-header
                     h1 Portfolio
-                    button(type="button" class="hidden menu-btn") ☰
+                    .mobile-menu-btn-container(class="hidden")
+                        button(type="button" class="toggle-dark-mode-mobile") 
+                            .icon 
+                        button(type="button" class="hidden menu-btn") ☰
                 nav
                     ul
                         li 
@@ -22,7 +25,7 @@ html(lang="en")
                         li 
                             a(href="#contact-me") Contact
 
-                        button(type="button" id="toggle-dark-mode") 
+                        button(type="button" class="toggle-dark-mode") 
                             .icon 
         main
             section#about-me.scroll-target
