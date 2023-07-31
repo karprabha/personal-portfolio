@@ -28,6 +28,10 @@
             width: $parent-container-width;
             margin: $gap;
         }
+
+        .description {
+            color: var(--text-color-4);
+        }
     }
 
     .btn-nav {

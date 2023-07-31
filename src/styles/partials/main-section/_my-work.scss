@@ -10,7 +10,7 @@
             gap: $gap;
 
             .card {
-                border: 1.8px solid
+                border: 1px solid
                     color-mix(in srgb, var(--text-color-1) 20%, transparent);
                 padding: $gap;
                 background-color: var(--bg-secondary);
