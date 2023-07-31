@@ -11,8 +11,8 @@ header {
     z-index: 2;
 
     background-color: var(--bg-primary);
-    border-bottom: 1px solid rgba(var(--text-color-1), 0.2);
-    box-shadow: 0 2px 4px rgba(186, 186, 186, 0.1);
+    border-bottom: 1px solid
+        color-mix(in srgb, var(--text-color-1) 20%, transparent);
 
     .container {
         display: flex;
@@ -26,6 +26,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             .mobile-menu-btn-container {
                 .toggle-dark-mode-mobile {
                     background: none;
@@ -81,7 +82,12 @@ header {
                     transition: color 0.3s;
                     &:hover {
                         color: var(--text-color-5);
-                        border-bottom: 2px solid rgba(var(--text-color-1), 0.6);
+                        border-bottom: 2px solid
+                            color-mix(
+                                in srgb,
+                                var(--text-color-1) 60%,
+                                transparent
+                            );
                     }
                 }
 
