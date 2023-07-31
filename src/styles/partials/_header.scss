@@ -74,12 +74,12 @@ header {
                     color: inherit;
                     border: none;
                     cursor: pointer;
-                    padding: 0;
                     .icon {
                         width: $gap;
-                        padding-top: 6px;
-                        height: fit-content;
-                        fill: var(--button-secondary);
+                        height: $gap;
+                    }
+                    :hover {
+                        opacity: 0.6;
                     }
                 }
             }
