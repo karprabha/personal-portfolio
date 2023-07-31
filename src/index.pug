@@ -32,6 +32,16 @@ html(lang="en")
                 .container
                     .profile-pic-container
                         img(src=require("assets/images/my-image.jpg") alt="profile picture")
+                        .contact-links
+                            a(href="https://github.com/karprabha" target="_blank") 
+                                .icon
+                                    include assets/svg/github-logo-2.svg
+                            a(href="https://www.linkedin.com/in/karprabha/" target="_blank") 
+                                .icon
+                                    include assets/svg/linkedin-logo-2.svg
+                            a(href="https://twitter.com/karprabha_" target="_blank") 
+                                .icon
+                                    include assets/svg/twitter-logo.svg
                     .intro-container
                         p 
                             | Hello! I'm 
@@ -87,16 +97,6 @@ html(lang="en")
                                         .description NPM
                                 button(type="button" class="btn-nav btn-prev") &lt;
                                 button(type="button" class="btn-nav btn-next") &gt;
-                        .contact-links
-                            a(href="https://github.com/karprabha" target="_blank") 
-                                .icon
-                                    include assets/svg/github-logo-2.svg
-                            a(href="https://www.linkedin.com/in/karprabha/" target="_blank") 
-                                .icon
-                                    include assets/svg/linkedin-logo-2.svg
-                            a(href="https://twitter.com/karprabha_" target="_blank") 
-                                .icon
-                                    include assets/svg/twitter-logo.svg
 
             section#my-work.scroll-target
                 .container

@@ -17,6 +17,9 @@
                 border-radius: 50%;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
+            .contact-links {
+                margin-top: $gap;
+            }
         }
 
         .intro-container {
@@ -46,11 +49,6 @@
             .technical-skills {
                 margin-top: $gap;
                 @extend .slider;
-            }
-
-            .contact-links {
-                margin-top: $gap;
-                justify-content: flex-end;
             }
         }
     }
