@@ -22,14 +22,14 @@ if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
 }
 
-const handleToggle = (element: Element) => {
+const handleToggle = () => {
     document.body.classList.toggle("light-theme");
     document.body.classList.toggle("dark-theme");
-    element.classList.toggle("sun-icon");
-    element.classList.toggle("moon-icon");
+    toggleThemeIcon.classList.toggle("sun-icon");
+    toggleThemeIcon.classList.toggle("moon-icon");
+    toggleThemeIconMobile.classList.toggle("sun-icon");
+    toggleThemeIconMobile.classList.toggle("moon-icon");
 };
 
-toggleTheme.addEventListener("click", () => handleToggle(toggleThemeIcon));
-toggleThemeMobile.addEventListener("click", () =>
-    handleToggle(toggleThemeIconMobile)
-);
+toggleTheme.addEventListener("click", handleToggle);
+toggleThemeMobile.addEventListener("click", handleToggle);
