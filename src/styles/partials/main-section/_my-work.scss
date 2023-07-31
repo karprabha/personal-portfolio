@@ -10,12 +10,11 @@
             gap: $gap;
 
             .card {
-                border: 1px solid rgba(204, 204, 204, 0.4);
+                border: 1.8px solid
+                    color-mix(in srgb, var(--text-color-1) 20%, transparent);
                 padding: $gap;
                 background-color: var(--bg-primary);
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(186, 186, 186, 0.1);
-                transition: box-shadow 0.3s;
 
                 .project-thumbnail-container {
                     display: flex;
@@ -70,6 +69,7 @@
                     font-size: 1.1rem;
                     line-height: 1.6;
                     margin-bottom: calc(1.5 * $gap);
+                    color: var(--text-color-3);
                 }
 
                 .project-dependencies {
@@ -84,7 +84,12 @@
                         background-color: var(--bg-primary);
                         color: var(--text-color-3);
                         text-decoration: none;
-                        border: 0.1px solid var(--text-color-1);
+                        border: 0.1px solid
+                            color-mix(
+                                in srgb,
+                                var(--text-color-2) 20%,
+                                transparent
+                            );
                         border-radius: 40px;
                         font-size: 0.9rem;
                         font-weight: bold;
