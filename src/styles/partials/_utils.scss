@@ -84,10 +84,10 @@
 
     .icon {
         width: calc(1.5 * $gap);
-        fill: var(--text-color-2);
+        fill: var(--text-color-3);
 
         &:hover {
-            fill: var(--text-color-4);
+            fill: var(--text-color-6);
         }
     }
 }

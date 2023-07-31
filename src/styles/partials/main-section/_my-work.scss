@@ -13,7 +13,7 @@
                 border: 1.8px solid
                     color-mix(in srgb, var(--text-color-1) 20%, transparent);
                 padding: $gap;
-                background-color: var(--bg-primary);
+                background-color: var(--bg-secondary);
                 border-radius: 8px;
 
                 .project-thumbnail-container {
@@ -81,7 +81,7 @@
                     .tag {
                         display: inline-block;
                         padding: 5px 12px;
-                        background-color: var(--bg-primary);
+                        background-color: var(--bg-secondary);
                         color: var(--text-color-3);
                         text-decoration: none;
                         border: 0.1px solid
@@ -96,7 +96,7 @@
                         transition: background-color 0.2s ease-in-out;
 
                         &:hover {
-                            background-color: var(--bg-secondary);
+                            background-color: var(--bg-primary);
                         }
                     }
                 }
@@ -106,5 +106,5 @@
 }
 
 section#my-work {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
 }
