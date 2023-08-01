@@ -108,3 +108,8 @@
 section#my-work {
     background-color: var(--bg-primary);
 }
+
+#my-work > .container {
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
