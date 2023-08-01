@@ -20,6 +20,7 @@ const imageSlider = () => {
 
         newDot.classList.add("bottom-nav-dots");
         newDotButton.classList.add("btn-nav-dots");
+        newDotButton.setAttribute("aria-label", "nav-dot-button");
 
         newDotButton.type = "button";
 

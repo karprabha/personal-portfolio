@@ -13,7 +13,7 @@ html(lang="en")
                 .mobile-menu-header
                     h1 Portfolio
                     .mobile-menu-btn-container(class="hidden")
-                        button(type="button" class="toggle-dark-mode-mobile") 
+                        button(type="button" aria-label="Toggle Theme" class="toggle-dark-mode-mobile") 
                             .icon 
                         button(type="button" class="hidden menu-btn") ☰
                 nav
@@ -24,9 +24,9 @@ html(lang="en")
                             a(href="#my-work") Projects
                         li 
                             a(href="#contact-me") Contact
-
-                        button(type="button" class="toggle-dark-mode") 
-                            .icon 
+                        li 
+                            button(type="button" aria-label="Toggle Theme" class="toggle-dark-mode") 
+                                .icon 
         main
             section#about-me.scroll-target
                 .container

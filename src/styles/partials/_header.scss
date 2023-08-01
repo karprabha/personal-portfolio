@@ -96,6 +96,7 @@ header {
                     color: inherit;
                     border: none;
                     cursor: pointer;
+                    padding-top: calc($gap/3);
                     .icon {
                         width: $gap;
                         height: $gap;
