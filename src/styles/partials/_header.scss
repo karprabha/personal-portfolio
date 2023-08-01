@@ -96,8 +96,11 @@ header {
                     color: inherit;
                     border: none;
                     cursor: pointer;
-                    padding-top: calc($gap/3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     .icon {
+                        margin: auto;
                         width: $gap;
                         height: $gap;
                     }
