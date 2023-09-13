@@ -206,6 +206,25 @@ html(lang="en")
                                 a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
                         .card
                             .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/cv-app.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 CV Application
+                                .links-container
+                                    a(href="https://github.com/karprabha/cv-application" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://idyllic-rabanadas-946c89.netlify.app/" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |Create and customize your CV effortlessly with this React-based CV Application. Generate a side-by-side CV with your details and select from three different fonts. You can even download the generated CV as a PDF with text selection and active hyperlinks.
+                            .project-dependencies
+                                a(href="https://vitejs.dev" target="_blank" class="tag") Vite
+                                a(href="https://react.dev" target="_blank" class="tag") React
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript 
+                                a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
+                        .card
+                            .project-thumbnail-container
                                 img(src=require("./assets/images/my-work-thumbnail/battleship.png"), alt="project-thumbnadil")
                             .project-title-and-links-container 
                                 h3 Battleship Game
