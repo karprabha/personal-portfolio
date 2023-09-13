@@ -73,6 +73,26 @@ html(lang="en")
                                         .description SASS
                                 .slide
                                     .logo
+                                        include assets/svg/mongoDB-logo-1.svg
+                                        .description MONGO-DB
+                                .slide
+                                    .logo
+                                        include assets/svg/expressjs-logo-1.svg
+                                        .description EXPRESS
+                                .slide
+                                    .logo
+                                        include assets/svg/nodejs-logo-1.svg
+                                        .description NODE
+                                .slide
+                                    .logo
+                                        include assets/svg/bootstrap-logo.svg
+                                        .description BOOTSTRAP
+                                .slide
+                                    .logo
+                                        include assets/svg/cpp-logo-1.svg
+                                        .description C++
+                                .slide
+                                    .logo
                                         include assets/svg/jest-logo.svg
                                         .description JEST
                                 .slide
@@ -102,6 +122,67 @@ html(lang="en")
                 .container
                     h2(class="section-heading") My Projects
                     .card-container
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/craftHaven.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 CraftHaven - Your Online Shopping Destination
+                                .links-container
+                                    a(href="https://github.com/karprabha/shopping-cart" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://crafthaven.netlify.app/" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |CraftHaven is your one-stop online shopping destination, offering a wide range of high-quality products from various categories. From fashion and electronics to home decor and more, we have something for everyone.
+                            .project-dependencies
+                                a(href="https://vitejs.dev" target="_blank" class="tag") Vite
+                                a(href="https://react.dev" target="_blank" class="tag") React
+                                a(href="https://reactrouter.com/en/main" target="_blank" class="tag") React-Router
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript 
+                                a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
+                                a(href="https://vitest.dev/" target="_blank" class="tag") Vitest
+                                a(href="https://testing-library.com/" target="_blank" class="tag") React Testing Library 
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/memory-game.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 Pokemon Memory Game
+                                .links-container
+                                    a(href="https://github.com/karprabha/memory-card" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://pokemon-memorycard-game.netlify.app/" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |Challenge your memory with the Pokemon Memory Game, a fun and interactive web-based game built using React. Flip over the cards, don't click on the same card twice and test your memory skills. The game features multiple levels, a scoring system, and a modal to show your progress.
+                            .project-dependencies
+                                a(href="https://vitejs.dev" target="_blank" class="tag") Vite
+                                a(href="https://react.dev" target="_blank" class="tag") React
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript 
+                                a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/mini-messageboard.png"), alt="project-thumbnadil")
+                            .project-title-and-links-container 
+                                h3 Mini Message Board - A Simple Messaging App
+                                .links-container
+                                    a(href="https://github.com/karprabha/mini-message-board" target="_blank") 
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://mini-message-board-6fmb.onrender.com/" target="_blank") 
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |Mini Message Board is a lightweight and easy-to-use messaging application that allows users to post and view messages. Whether you want to leave a quick note or have a conversation, our app makes it simple and straightforward.
+                            .project-dependencies
+                                a(href="https://nodejs.dev/en/" target="_blank" class="tag") Node.js
+                                a(href="https://expressjs.com" target="_blank" class="tag") Express.js
+                                a(href="https://www.mongodb.com" target="_blank" class="tag") MongoDB
+                                a(href="https://pugjs.org/api/getting-started.html" target="_blank" class="tag") Pug
+                                a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
                         .card
                             .project-thumbnail-container
                                 img(src=require("./assets/images/my-work-thumbnail/sql-query-app.png"), alt="project-thumbnadil")
@@ -143,65 +224,6 @@ html(lang="en")
                                 a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
                                 a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
                                 a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
-
-                        .card
-                            .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/mobile-menu-npm.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
-                                h3 Mobile Menu (Node Package)
-                                .links-container
-                                    a(href="https://github.com/karprabha/mobile-menu-npm" target="_blank") 
-                                        .icon
-                                            include assets/svg/github-logo-2.svg
-                                    a(href="https://www.npmjs.com/package/@karprabha/mobile-menu" target="_blank") 
-                                        .icon
-                                            include assets/svg/open-link-icon.svg
-                            .project-description
-                                |Mobile Menu is a progressively collapsing menu, similar to the one used by BBC. It allows you to create a responsive and user-friendly menu for your website.
-                            .project-dependencies
-                                a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
-                                a(href="https://www.npmjs.com" target="_blank" class="tag") NPM
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
-                        .card
-                            .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/image-slider-npm.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
-                                h3 Image Slider (Node Package)
-                                .links-container
-                                    a(href="https://github.com/karprabha/image-slider-npm" target="_blank") 
-                                        .icon
-                                            include assets/svg/github-logo-2.svg
-                                    a(href="https://www.npmjs.com/package/@karprabha/image-slider" target="_blank") 
-                                        .icon
-                                            include assets/svg/open-link-icon.svg
-                            .project-description
-                                |Image slider is a module that allows you to create an image carousel or slider on your website. It provides a user-friendly and interactive way to showcase a collection of images in a slideshow format.
-                            .project-dependencies
-                                a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
-                                a(href="https://www.npmjs.com" target="_blank" class="tag") NPM
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
-                        .card
-                            .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/sfml-classic-pong-game.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
-                                h3 SFML Classic Pong Game
-                                .links-container
-                                    a(href="https://github.com/karprabha/sfml-classic-pong-game" target="_blank") 
-                                        .icon
-                                            include assets/svg/github-logo-2.svg
-                                    a(href="https://github.com/karprabha/sfml-classic-pong-game" target="_blank") 
-                                        .icon
-                                            include assets/svg/open-link-icon.svg
-                            .project-description
-                                |A simple recreation of the classic Pong game using SFML (Simple and Fast Multimedia Library). Players control paddles to hit a ball back and forth, until one player misses the ball.
-                            .project-dependencies
-                                a(href="https://en.cppreference.com/w/" target="_blank" class="tag") C++
-                                a(href="https://www.sfml-dev.org/" target="_blank" class="tag") SFML
-                                a(href="https://visualstudio.microsoft.com" target="_blank" class="tag") Visual Studio
 
             section#contact-me.scroll-target
                 .container 
