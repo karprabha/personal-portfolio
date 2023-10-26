@@ -9,44 +9,44 @@ html(lang="en")
 
     body
         header
-            .container 
+            .container
                 .mobile-menu-header
                     h1 Portfolio
                     .mobile-menu-btn-container(class="hidden")
-                        button(type="button" aria-label="Toggle Theme" class="toggle-dark-mode-mobile") 
-                            .icon 
+                        button(type="button" aria-label="Toggle Theme" class="toggle-dark-mode-mobile")
+                            .icon
                         button(type="button" class="hidden menu-btn") ☰
                 nav
                     ul
-                        li 
+                        li
                             a(href="#about-me") About
-                        li 
+                        li
                             a(href="#my-work") Projects
-                        li 
+                        li
                             a(href="#contact-me") Contact
-                        li 
-                            button(type="button" aria-label="Toggle Theme" class="toggle-dark-mode") 
-                                .icon 
+                        li
+                            button(type="button" aria-label="Toggle Theme" class="toggle-dark-mode")
+                                .icon
         main
             section#about-me.scroll-target
                 .container
                     .profile-pic-container
                         img(src=require("assets/images/my-image.jpg") alt="profile picture")
                         .contact-links
-                            a(href="https://github.com/karprabha" target="_blank") 
+                            a(href="https://github.com/karprabha" target="_blank")
                                 .icon
                                     include assets/svg/github-logo-2.svg
-                            a(href="https://www.linkedin.com/in/karprabha/" target="_blank") 
+                            a(href="https://www.linkedin.com/in/karprabha/" target="_blank")
                                 .icon
                                     include assets/svg/linkedin-logo-2.svg
-                            a(href="https://twitter.com/karprabha_" target="_blank") 
+                            a(href="https://twitter.com/karprabha_" target="_blank")
                                 .icon
                                     include assets/svg/twitter-logo.svg
                     .intro-container
-                        p 
-                            | Hello! I'm 
+                        p
+                            | Hello! I'm
                             span(class="my-name") Prabhakar Yadav
-                            | , a passionate web developer on a journey with React. Building modern and intuitive interfaces to elevate user experiences. 
+                            | , a passionate web developer on a journey with React. Building modern and intuitive interfaces to elevate user experiences.
 
                         h4(class="skill-heading") Technical Skills
                         .technical-skills
@@ -124,14 +124,39 @@ html(lang="en")
                     .card-container
                         .card
                             .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/crafthaven.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
-                                h3 CraftHaven - Your Online Shopping Destination
+                                img(src=require("./assets/images/my-work-thumbnail/blog-api.png"), alt="project-thumbnail")
+                            .project-title-and-links-container
+                                h3 CodeGeekCentral - Your Ultimate Blogging Platform
                                 .links-container
-                                    a(href="https://github.com/karprabha/shopping-cart" target="_blank") 
+                                    a(href="https://github.com/karprabha/blog-api" target="_blank")
                                         .icon
                                             include assets/svg/github-logo-2.svg
-                                    a(href="https://crafthaven.netlify.app/" target="_blank") 
+                                    a(href="https://codegeekcentral.vercel.app/" target="_blank")
+                                        .icon
+                                            include assets/svg/open-link-icon.svg
+                            .project-description
+                                |CodeGeekCentral is a JAMstack-powered platform, empowers users to share their thoughts, explore exciting content, and engage with the community. Whether you're a seasoned writer or an avid reader, CodeGeekCentral is your go-to destination for all things blogs.
+                            .project-dependencies
+                                a(href="https://nextjs.org/" target="_blank" class="tag") NextJs 13
+                                a(href="https://react.dev" target="_blank" class="tag") React
+                                a(href="https://nodejs.dev/en/" target="_blank" class="tag") Node.js
+                                a(href="https://expressjs.com" target="_blank" class="tag") Express.js
+                                a(href="https://www.mongodb.com" target="_blank" class="tag") MongoDB
+                                a(href="https://vitejs.dev" target="_blank" class="tag") Vite
+                                a(href="https://jwt.io/" target="_blank" class="tag") JWT
+                                a(href="https://reactrouter.com/en/main" target="_blank" class="tag") React-Router
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript
+
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/crafthaven.png"), alt="project-thumbnail")
+                            .project-title-and-links-container
+                                h3 CraftHaven - Your Online Shopping Destination
+                                .links-container
+                                    a(href="https://github.com/karprabha/shopping-cart" target="_blank")
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://crafthaven.netlify.app/" target="_blank")
                                         .icon
                                             include assets/svg/open-link-icon.svg
                             .project-description
@@ -140,20 +165,20 @@ html(lang="en")
                                 a(href="https://vitejs.dev" target="_blank" class="tag") Vite
                                 a(href="https://react.dev" target="_blank" class="tag") React
                                 a(href="https://reactrouter.com/en/main" target="_blank" class="tag") React-Router
-                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript 
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript
                                 a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
                                 a(href="https://vitest.dev/" target="_blank" class="tag") Vitest
-                                a(href="https://testing-library.com/" target="_blank" class="tag") React Testing Library 
+                                a(href="https://testing-library.com/" target="_blank" class="tag") React Testing Library
                         .card
                             .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/memory-game.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
+                                img(src=require("./assets/images/my-work-thumbnail/memory-game.png"), alt="project-thumbnail")
+                            .project-title-and-links-container
                                 h3 Pokemon Memory Game
                                 .links-container
-                                    a(href="https://github.com/karprabha/memory-card" target="_blank") 
+                                    a(href="https://github.com/karprabha/memory-card" target="_blank")
                                         .icon
                                             include assets/svg/github-logo-2.svg
-                                    a(href="https://pokemon-memorycard-game.netlify.app/" target="_blank") 
+                                    a(href="https://pokemon-memorycard-game.netlify.app/" target="_blank")
                                         .icon
                                             include assets/svg/open-link-icon.svg
                             .project-description
@@ -161,18 +186,18 @@ html(lang="en")
                             .project-dependencies
                                 a(href="https://vitejs.dev" target="_blank" class="tag") Vite
                                 a(href="https://react.dev" target="_blank" class="tag") React
-                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript 
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript
                                 a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
                         .card
                             .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/mini-messageboard.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
+                                img(src=require("./assets/images/my-work-thumbnail/mini-messageboard.png"), alt="project-thumbnail")
+                            .project-title-and-links-container
                                 h3 Mini Message Board - A Simple Messaging App
                                 .links-container
-                                    a(href="https://github.com/karprabha/mini-message-board" target="_blank") 
+                                    a(href="https://github.com/karprabha/mini-message-board" target="_blank")
                                         .icon
                                             include assets/svg/github-logo-2.svg
-                                    a(href="https://mini-message-board-6fmb.onrender.com/" target="_blank") 
+                                    a(href="https://mini-message-board-6fmb.onrender.com/" target="_blank")
                                         .icon
                                             include assets/svg/open-link-icon.svg
                             .project-description
@@ -185,14 +210,14 @@ html(lang="en")
                                 a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
                         .card
                             .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/sql-query-app.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
+                                img(src=require("./assets/images/my-work-thumbnail/sql-query-app.png"), alt="project-thumbnail")
+                            .project-title-and-links-container
                                 h3 SQL Query App
                                 .links-container
-                                    a(href="https://github.com/karprabha/sql-query-app" target="_blank") 
+                                    a(href="https://github.com/karprabha/sql-query-app" target="_blank")
                                         .icon
                                             include assets/svg/github-logo-2.svg
-                                    a(href="https://transcendent-malabi-550033.netlify.app/" target="_blank") 
+                                    a(href="https://transcendent-malabi-550033.netlify.app/" target="_blank")
                                         .icon
                                             include assets/svg/open-link-icon.svg
                             .project-description
@@ -202,18 +227,18 @@ html(lang="en")
                                 a(href="https://react.dev" target="_blank" class="tag") React
                                 a(href="https://reactrouter.com/en/main" target="_blank" class="tag") React-Router
                                 a(href="https://www.npmjs.com/package/react-window" target="_blank" class="tag") React-Window
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
+                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript
                                 a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
                         .card
                             .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/cv-app.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
+                                img(src=require("./assets/images/my-work-thumbnail/cv-app.png"), alt="project-thumbnail")
+                            .project-title-and-links-container
                                 h3 CV Application
                                 .links-container
-                                    a(href="https://github.com/karprabha/cv-application" target="_blank") 
+                                    a(href="https://github.com/karprabha/cv-application" target="_blank")
                                         .icon
                                             include assets/svg/github-logo-2.svg
-                                    a(href="https://idyllic-rabanadas-946c89.netlify.app/" target="_blank") 
+                                    a(href="https://idyllic-rabanadas-946c89.netlify.app/" target="_blank")
                                         .icon
                                             include assets/svg/open-link-icon.svg
                             .project-description
@@ -221,64 +246,44 @@ html(lang="en")
                             .project-dependencies
                                 a(href="https://vitejs.dev" target="_blank" class="tag") Vite
                                 a(href="https://react.dev" target="_blank" class="tag") React
-                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript 
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript
                                 a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
-                        .card
-                            .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/battleship.png"), alt="project-thumbnadil")
-                            .project-title-and-links-container 
-                                h3 Battleship Game
-                                .links-container
-                                    a(href="https://github.com/karprabha/battleship" target="_blank") 
-                                        .icon
-                                            include assets/svg/github-logo-2.svg
-                                    a(href="https://fantastic-florentine-7819d4.netlify.app/" target="_blank") 
-                                        .icon
-                                            include assets/svg/open-link-icon.svg
-                            .project-description
-                                |Welcome to the Battleship Game! This web-based application brings the classic naval strategy game to your browser, offering an engaging and thrilling gaming experience
-                            .project-dependencies
-                                a(href="https://webpack.js.org" target="_blank" class="tag") Webpack
-                                a(href="https://jestjs.io" target="_blank" class="tag") Jest
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript 
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                                a(href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tag") HTML
 
             section#contact-me.scroll-target
-                .container 
+                .container
                     h2(class="section-heading") Contacts
                     .contacts-container
                         form(method="POST")
                             label Name
-                                input(type="text" name="name" placeholder="Your Name") 
-                            label Email 
+                                input(type="text" name="name" placeholder="Your Name")
+                            label Email
                                 input(type="email" name="email" placeholder="Your Email")
                             label Message
                                 textarea(name="message" cols="30" rows="10" placeholder="Your Message")
                             button(type="submit") Send Message
-                        .contact-details 
+                        .contact-details
                             h3 Get in Touch
                             p I'm thrilled to connect and collaborate with fellow enthusiasts, clients, and like-minded individuals. If you have any questions about my work, want to discuss potential projects, or simply want to say hello, don't hesitate to reach out! I'm always eager to engage in exciting opportunities and explore new horizons in web development.
 
                             .address-section
-                                h3 My Address 
-                                .detail-info-container 
+                                h3 My Address
+                                .detail-info-container
                                     .icon
                                         include assets/svg/map-marker-icon.svg
-                                    span Greater Noida, India 
-                                .detail-info-container 
+                                    span Greater Noida, India
+                                .detail-info-container
                                     .icon
                                         include assets/svg/email-icon.svg
                                     span developer.prabhakaryadav@gmail.com
 
                     .contact-links
-                        a(href="https://github.com/karprabha" target="_blank") 
+                        a(href="https://github.com/karprabha" target="_blank")
                             .icon
                                 include assets/svg/github-logo-2.svg
-                        a(href="https://www.linkedin.com/in/karprabha/" target="_blank") 
+                        a(href="https://www.linkedin.com/in/karprabha/" target="_blank")
                             .icon
                                 include assets/svg/linkedin-logo-2.svg
-                        a(href="https://twitter.com/karprabha_" target="_blank") 
+                        a(href="https://twitter.com/karprabha_" target="_blank")
                             .icon
                                 include assets/svg/twitter-logo.svg
 
