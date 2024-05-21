@@ -46,11 +46,39 @@ html(lang="en")
                         p
                             | Hello! I'm
                             span(class="my-name")  Prabhakar Yadav
-                            | , a full-stack web developer, dedicated to creating elegant interfaces and robust backend solutions that elevate user experiences with finesse.
+                            | , a software engineer, dedicated to developing high-quality software solutions that enhance user experiences with precision and finesse.
 
                         h4(class="skill-heading") Technical Skills
                         .technical-skills
                             .slider
+                                .slide
+                                    .logo
+                                        include assets/svg/docker-logo-1.svg
+                                        .description DOCKER
+                                .slide
+                                    .logo
+                                        include assets/svg/graphql-logo-1.svg
+                                        .description GRAPH-QL
+                                .slide
+                                    .logo
+                                        include assets/svg/nginx-logo-1.svg
+                                        .description NGINX
+                                .slide
+                                    .logo
+                                        include assets/svg/postgresql-logo-2.svg
+                                        .description POSTGRESQL
+                                .slide
+                                    .logo
+                                        include assets/svg/nextjs-logo-1.svg
+                                        .description NEXT-JS
+                                .slide
+                                    .logo
+                                        include assets/svg/unity-logo-1.svg
+                                        .description UNITY
+                                .slide
+                                    .logo
+                                        include assets/svg/cpp-logo-1.svg
+                                        .description C++
                                 .slide
                                     .logo
                                         include assets/svg/mongoDB-logo-1.svg
@@ -71,14 +99,10 @@ html(lang="en")
                                     .logo
                                         include assets/svg/typescript-logo-1.svg
                                         .description TYPESCRIPT
-                                .slide
-                                    .logo
-                                        include assets/svg/nextjs-logo-1.svg
-                                        .description NEXT-JS
-                                .slide
-                                    .logo
-                                        include assets/svg/javascript-logo-2.svg
-                                        .description JAVASCRIPT
+                                //- .slide
+                                //-     .logo
+                                //-         include assets/svg/javascript-logo-2.svg
+                                //-         .description JAVASCRIPT
                                 .slide
                                     .logo
                                         include assets/svg/webpack-logo-1.svg
@@ -93,40 +117,36 @@ html(lang="en")
                                         .description SASS
                                 .slide
                                     .logo
-                                        include assets/svg/postgresql-logo-2.svg
-                                        .description POSTGRESQL
-                                .slide
-                                    .logo
                                         include assets/svg/bootstrap-logo.svg
                                         .description BOOTSTRAP
-                                .slide
-                                    .logo
-                                        include assets/svg/cpp-logo-1.svg
-                                        .description C++
                                 .slide
                                     .logo
                                         include assets/svg/jest-logo.svg
                                         .description JEST
                                 .slide
                                     .logo
-                                        include assets/svg/html5-logo-1.svg
-                                        .description HTML5
-                                .slide
-                                    .logo
-                                        include assets/svg/css3-logo-1.svg
-                                        .description CSS3
-                                .slide
-                                    .logo
-                                        include assets/svg/git-logo.svg
-                                        .description GIT
-                                .slide
-                                    .logo
-                                        include assets/svg/github-logo-1.svg
-                                        .description GITHUB
-                                .slide
-                                    .logo
-                                        include assets/svg/npm-logo.svg
-                                        .description NPM
+                                        include assets/svg/cypress-logo-1.svg
+                                        .description CYPRESS
+                                //- .slide
+                                //-     .logo
+                                //-         include assets/svg/html5-logo-1.svg
+                                //-         .description HTML5
+                                //- .slide
+                                //-     .logo
+                                //-         include assets/svg/css3-logo-1.svg
+                                //-         .description CSS3
+                                //- .slide
+                                //-     .logo
+                                //-         include assets/svg/git-logo.svg
+                                //-         .description GIT
+                                //- .slide
+                                //-     .logo
+                                //-         include assets/svg/github-logo-1.svg
+                                //-         .description GITHUB
+                                //- .slide
+                                //-     .logo
+                                //-         include assets/svg/npm-logo.svg
+                                //-         .description NPM
                                 button(type="button" class="btn-nav btn-prev") &lt;
                                 button(type="button" class="btn-nav btn-next") &gt;
 
@@ -134,6 +154,30 @@ html(lang="en")
                 .container
                     h2(class="section-heading") My Projects
                     .card-container
+                        .card
+                            .project-thumbnail-container
+                                img(src=require("./assets/images/my-work-thumbnail/localfluence.png"), alt="project-thumbnail")
+                            .project-title-and-links-container
+                                h3 LocalFluence - Connecting Businesses with Influencers
+                                .links-container
+                                    a(href="https://github.com/karprabha/localFluence" target="_blank")
+                                        .icon
+                                            include assets/svg/github-logo-2.svg
+                                    a(href="https://codegeekcentral.vercel.app/" target="_blank")
+                                        //- .icon
+                                        //-     include assets/svg/open-link-icon.svg
+                            .project-description
+                                |LocalFluence is User-friendly platform for businesses and influencers. Facilitates finding local influencers, tracking campaigns, and enabling influencers to monetize their reach.
+                            .project-dependencies
+                                a(href="https://www.docker.com/" target="_blank" class="tag") Docker
+                                a(href="https://graphql.org/" target="_blank" class="tag") GraphQL
+                                a(href="https://nginx.org/en/" target="_blank" class="tag") NginX
+                                a(href="https://www.postgresql.org/" target="_blank" class="tag") PostgreSQL
+                                a(href="https://nextjs.org/" target="_blank" class="tag") NextJs 13
+                                a(href="https://nodejs.dev/en/" target="_blank" class="tag") Node.js
+                                a(href="https://expressjs.com" target="_blank" class="tag") Express.js
+                                a(href="https://jwt.io/" target="_blank" class="tag") JWT
+                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript
                         .card
                             .project-thumbnail-container
                                 img(src=require("./assets/images/my-work-thumbnail/blog-api.png"), alt="project-thumbnail")
@@ -241,25 +285,6 @@ html(lang="en")
                                 a(href="https://www.npmjs.com/package/react-window" target="_blank" class="tag") React-Window
                                 a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tag") Javascript
                                 a(href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tag") CSS
-                        .card
-                            .project-thumbnail-container
-                                img(src=require("./assets/images/my-work-thumbnail/cv-app.png"), alt="project-thumbnail")
-                            .project-title-and-links-container
-                                h3 CV Application
-                                .links-container
-                                    a(href="https://github.com/karprabha/cv-application" target="_blank")
-                                        .icon
-                                            include assets/svg/github-logo-2.svg
-                                    a(href="https://idyllic-rabanadas-946c89.netlify.app/" target="_blank")
-                                        .icon
-                                            include assets/svg/open-link-icon.svg
-                            .project-description
-                                |Create and customize your CV effortlessly with this React-based CV Application. Generate a side-by-side CV with your details and select from three different fonts. You can even download the generated CV as a PDF with text selection and active hyperlinks.
-                            .project-dependencies
-                                a(href="https://vitejs.dev" target="_blank" class="tag") Vite
-                                a(href="https://react.dev" target="_blank" class="tag") React
-                                a(href="https://www.typescriptlang.org/" target="_blank" class="tag") Typescript
-                                a(href="https://sass-lang.com/" target="_blank" class="tag") SASS
 
             section#contact-me.scroll-target
                 .container
